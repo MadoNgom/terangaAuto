@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* RESET ELEMENT ON THE PAGE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+li {
+  list-style: none;
+}
+/* SECTION STYLING */
+.first-section {
+  /* min-height: 70vh; */
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../image/cars/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-blue {
+  position: relative;
+  color: #1010e2;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #1010e2;
+}
+.btn-blue::before {
+  content: "Expl";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40px;
+  border-radius: 20px;
+  background: #1010e2;
+  color: #fff;
+}
+.btn-blue:hover::before {
+  content: "Explorer";
+  width: 100%;
+  transition: 0.3s ease;
+}
+.section-title {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.listproduit {
+  display: grid;
+
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 15px; */
+}
+.heart {
+  background-color: hsla(230, 30%, 85%, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  color: #1010e2;
+  cursor: pointer;
+}
+.section-text {
+  margin-top: 80px;
+}
+/* card styling */
+
+.card img {
+  aspect-ratio: 16/9;
+}
+
+/* TESTI?ONIALS STYLING */
+.home-testimonial {
+  /* background-color: #231834; */
+  padding: 4rem 0;
+}
+.home-testimonial-bottom {
+  background-color: #f8f8f8;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 20px 0;
+}
+.home-testimonial h3 {
+  color: #3333;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* FOOTER STYLING */
+.col .footer-col li {
+  text-decoration: none;
+}
+.home-testimonial h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.testimonial-pos {
+  position: relative;
+  top: 24px;
+}
+.testimonial-inner .tour-desc {
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.color-grey-3 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2;
+}
+.testimonial-inner img.tm-people {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: none;
+}
+.link-name {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2;
+}
+.link-position {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12px;
+  color: #6c83a2;
+}
+@media (min-width: 750px) {
+  .listproduit {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 860px) {
+  .listproduit {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+  }
+}
